@@ -1,9 +1,8 @@
 language: java
 
-jdk: oraclejdk8
-install: true
 before_install:
   - chmod +x mvnw
+jdk: oraclejdk8
 before_script:
   - echo "Starting build"
 script:
@@ -24,5 +23,4 @@ notifications:
       - CaH4aZzz@gmail.com
     on_success: never
     on_failure: always
-#just comment
 
