@@ -5,8 +5,6 @@ before_install:
 jdk: oraclejdk8
 before_script:
   - echo "Starting build"
-script:
-  - ./mvnw clean package
 after_script:
   - echo "Script finished"
 after_success:
