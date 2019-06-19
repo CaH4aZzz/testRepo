@@ -8,8 +8,6 @@ install:
   - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 before_script:
   - echo "Starting build"
-script:
-  - ./mvnw clean install
   after_script:
     - echo "Script finished"
   after_success:
