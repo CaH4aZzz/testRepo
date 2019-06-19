@@ -29,4 +29,4 @@ public class ComponentProductService {
         return base * getExponentialValue(base, exponent - 1);
     }
 }
-//ghjghjghjgjghj
+//ghjghjghjgjghjasfdsdfsdf
