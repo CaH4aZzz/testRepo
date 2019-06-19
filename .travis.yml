@@ -13,7 +13,9 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 after_failure:
   - echo "Build was failed"
-
+cache:
+  directories:
+    - $HOME/.m2
 notifications:
   email:
     recipients:
