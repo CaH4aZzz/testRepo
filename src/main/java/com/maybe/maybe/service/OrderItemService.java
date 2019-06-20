@@ -1,5 +1,6 @@
 package com.maybe.maybe.service;
 
+import com.maybe.maybe.entity.Order;
 import com.maybe.maybe.entity.OrderItem;
 import com.maybe.maybe.repository.OrderItemRepository;
 import org.springframework.stereotype.Service;
@@ -15,8 +16,8 @@ public class OrderItemService {
         this.orderItemRepository = orderItemRepository;
     }
 
-    public List<OrderItem> getAll() {
-        return orderItemRepository.findAll();
+    public List<OrderItem> getAllInOrder(Order order) {
+        return orderItemRepository.findByOrder(order);
     }
 
     public Optional<OrderItem> getById(Long id){
