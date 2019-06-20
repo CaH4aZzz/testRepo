@@ -29,7 +29,7 @@ public class OrderController {
     @GetMapping("/{id}")
     public ResponseEntity<?> getById(@PathVariable("id") Long id){
 
-//        Optional<Order> order = orderService.getById(id);
+        Optional<Order> order = orderService.getById(id);
 
         if (!order.isPresent()){
             return new ResponseEntity<Order>(HttpStatus.BAD_REQUEST);
